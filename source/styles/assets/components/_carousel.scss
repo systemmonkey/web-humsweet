@@ -1,0 +1,112 @@
+.carousel {
+    position: relative;
+    height: 500px;
+
+    &Controls {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        width: $infinity;
+        height: $infinity;
+        z-index: 9999;
+        padding: 0 30px;
+    }
+
+    &Content {
+        position: absolute;
+        display: block;
+        width: $infinity;
+        height: 100vh;
+    }
+
+    &ContentItem {
+        display: block;
+        padding: 20px;
+        height: $infinity;
+        height: 500px;
+        background-image: url('https://images.unsplash.com/photo-1515256722043-0f2b082ddadc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=851&q=80');
+        background-position: center;
+        background-size: $infinity;
+        background-repeat: no-repeat;
+
+        .message {
+            background-color: $craftColor;
+            position: absolute;
+            height: 500px;
+            top: 0;
+            left: 200px;
+            width: 250px;
+            padding: 20px;
+            color: $white;
+        }
+    }
+
+    // Small size carousel
+    &Small {
+        display: flex;
+        align-items: center;
+        height: $infinity;
+        background-color: $giftColorContrast;
+
+        .buttons {
+            position: absolute;
+            width: $infinity;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .chevLeft, .chevRight {
+                display: block;
+                height: 40px;
+                width: 40px;
+
+                .featherButton {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+
+        .featherButton {
+            height: 40px;
+        }
+
+        .leftQT, .rightQT {
+            font-size: 90px;
+        }
+
+        .leftQT {
+            float: left;
+            display: block;
+            width: $infinity;
+            margin-bottom: 0 !important;
+        }
+
+        .rightQT {
+            float: right;
+            margin-left: auto;
+            line-height: 180px;
+        }
+
+        .content {
+            display: block;
+            padding: 0 90px;
+            overflow: hidden;
+
+            .author {
+                margin-top: 100px;
+                font-size: 18px;
+            }
+        }
+
+        span .rightQT {
+            margin-top: 20px;
+        }
+    }
+}
+
+footer {
+    border-top: 5px solid $black;
+}

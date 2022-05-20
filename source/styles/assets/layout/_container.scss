@@ -1,0 +1,16 @@
+.container {
+    @include makeContainer;
+    max-width: map-get($gridBreakpoints, "xl");
+
+    // Other container type
+    &-fluid {
+        @include makeContainer;
+        max-width: map-get($gridBreakpoints, "xxl");
+    }
+
+    // Objects inner .container
+    h1, h2, h3, h4, h5, h6 {
+        display: block;
+        text-align: center;
+    }
+}

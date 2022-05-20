@@ -1,0 +1,23 @@
+$primaryColor: #FFFDDF;
+$black: #350005;
+$white: #FFFFFF;
+$chocolatte: $black;
+$wineColor: #FF8700;
+$giftColor: #FF434a;
+$giftColorContrast: #ff2e43;
+$craftColor: #00A374;
+
+$serifFont: "MADE kenfolg", times, serif;
+$sansFont: "Kanit", Helvetica Neue, sans-serif;
+
+$gridBreakpoints: (
+    "xs": 0,
+    "sm": 576px,
+    "md": 768px,
+    "lg": 992px,
+    "xl": 1200px,
+    "xxl": 1400px
+);
+
+// Sizes
+$infinity: 100%;

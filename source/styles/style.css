@@ -1,0 +1,367 @@
+@font-face {
+  font-family: "MADE Kenfolg";
+  font-style: none;
+  font-weight: normal;
+  src: url("fonts/MADE Kenfolg/font.otf") format(opentype);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "MADE kenfolg", times, serif;
+  font-weight: lighter;
+}
+
+p {
+  font-family: "Kanit", Helvetica Neue, sans-serif;
+}
+
+html, body {
+  background-color: #FFFDDF;
+}
+
+.icon-white {
+  color: #FFF;
+  cursor: pointer;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.container-fluid {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.container h1, .container h2, .container h3, .container h4, .container h5, .container h6 {
+  display: block;
+  text-align: center;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: auto;
+      flex-wrap: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #FFFDDF;
+  padding: 0 10px;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbarLeft {
+  display: block;
+}
+
+.navbarLeft li, .navbarRight li {
+  display: inline-block;
+}
+
+.navbarLeft li a, .navbarRight li a {
+  display: block;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #350005;
+  font-family: "MADE kenfolg", times, serif;
+}
+
+.navbarCenter {
+  display: block;
+  height: 100px;
+  margin: 0 0 32px 0;
+}
+
+.sec3 {
+  background-color: #FF6868;
+  margin: 100px 0 100px 0;
+  color: #FFFFFF;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.sec3 h1 {
+  text-align: left !important;
+}
+
+.carousel {
+  position: relative;
+  height: 500px;
+}
+
+.carouselControls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  padding: 0 30px;
+}
+
+.carouselContent {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100vh;
+}
+
+.carouselContentItem {
+  display: block;
+  padding: 20px;
+  height: 100%;
+  height: 500px;
+  background-image: url("https://images.unsplash.com/photo-1515256722043-0f2b082ddadc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=851&q=80");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.carouselContentItem .message {
+  background-color: #00A374;
+  position: absolute;
+  height: 500px;
+  top: 0;
+  left: 200px;
+  width: 250px;
+  padding: 20px;
+  color: #FFFFFF;
+}
+
+.carouselSmall {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  background-color: #ff2e43;
+}
+
+.carouselSmall .buttons {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carouselSmall .buttons .chevLeft, .carouselSmall .buttons .chevRight {
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+
+.carouselSmall .buttons .chevLeft .featherButton, .carouselSmall .buttons .chevRight .featherButton {
+  width: 40px;
+  height: 40px;
+}
+
+.carouselSmall .featherButton {
+  height: 40px;
+}
+
+.carouselSmall .leftQT, .carouselSmall .rightQT {
+  font-size: 90px;
+}
+
+.carouselSmall .leftQT {
+  float: left;
+  display: block;
+  width: 100%;
+  margin-bottom: 0 !important;
+}
+
+.carouselSmall .rightQT {
+  float: right;
+  margin-left: auto;
+  line-height: 180px;
+}
+
+.carouselSmall .content {
+  display: block;
+  padding: 0 90px;
+  overflow: hidden;
+}
+
+.carouselSmall .content .author {
+  margin-top: 100px;
+  font-size: 18px;
+}
+
+.carouselSmall span .rightQT {
+  margin-top: 20px;
+}
+
+footer {
+  border-top: 5px solid #350005;
+}
+
+.grid3 .block {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px 20px;
+  text-align: center;
+}
+
+.grid3 .block h3 {
+  font-family: "Kanit", Helvetica Neue, sans-serif;
+  font-weight: 600;
+}
+
+.grid3 .block p {
+  font-size: 14;
+}
+
+.grid3 .block img {
+  display: block;
+  height: 80px;
+  margin: 0 auto 10px auto;
+}
+
+.grid4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 30px auto;
+}
+
+.grid4 .block {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px 20px;
+  text-align: center;
+}
+
+.grid4 .block h3 {
+  font-family: "Kanit", Helvetica Neue, sans-serif !important;
+  font-weight: 600;
+}
+
+.grid4 .block p {
+  font-size: 14px !important;
+  font-family: "MADE kenfolg", times, serif;
+  color: #FFFFFF;
+}
+
+.grid4 .block img {
+  display: block;
+  height: 150px;
+  margin: 0 auto 10px auto;
+}
+
+.grid4 .textChocolate {
+  background-color: #350005;
+}
+
+.grid4 .textWine {
+  background-color: #FF8700;
+}
+
+.grid4 .textGift {
+  background-color: #FF434a;
+}
+
+.grid4 .textCraft {
+  background-color: #00A374;
+}
+
+.gridGal {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  width: 100%;
+}
+
+.gridGal .box {
+  width: 100% !important;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.gridGal .box .item img {
+  display: block;
+  width: 100%;
+}
+
+.gridGal .box .item .textbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #00A374;
+  height: 100%;
+  padding: 20px 50px;
+  color: #FFFFFF;
+}
+
+.gridGal .box .item .textbox .sep {
+  display: block;
+  background-color: #FFFFFF;
+  height: 10px;
+  width: 60px;
+  margin: 20px 0 20px;
+}
+
+.gridGal .box .item .textbox h1 {
+  text-align: left !important;
+}
+
+.gridGal .box .item .textbox p {
+  font-family: "MADE kenfolg", times, serif !important;
+  font-size: 22px;
+}
+/*# sourceMappingURL=style.css.map */

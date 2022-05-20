@@ -1,0 +1,31 @@
+.navbar {
+    display: flex;
+    flex-wrap: auto;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $primaryColor;
+    padding: 0 10px;
+
+    ul { list-style: none; }
+
+    &Left { display: block; }
+
+    &Left li, &Right li {
+        display: inline-block;
+
+        a {
+            display: block;
+            font-size: 18px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: $black;
+            font-family: $serifFont;
+        }
+    }
+
+    &Center {
+        display: block;
+        height: 100px;
+        margin: 0 0 32px 0;
+    }
+}

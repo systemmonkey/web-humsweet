@@ -1,0 +1,106 @@
+.grid {
+	&3 {
+		.block {
+			width: fit-content;
+			margin: 20px 20px;
+			text-align: center;
+
+			h3 {
+					font-family: $sansFont;
+					font-weight: 600;
+			}
+
+			p {
+					font-size: 14;
+			}
+
+			img {
+					display: block;
+					height: 80px;
+					margin: 0 auto 10px auto;
+			}
+		}
+	}
+	
+	&4 {
+		display: flex;
+		width: fit-content;
+		align-items: flex-start;
+		margin: 30px auto;
+	
+		.block {
+			width: fit-content;
+			margin: 20px 20px;
+			text-align: center;
+
+			h3 {
+				font-family: $sansFont !important;
+				font-weight: 600;
+			}
+
+			p {
+				font-size: 14px !important;
+				font-family: $serifFont;
+				color: $white;
+			}
+	
+			img {
+				display: block;
+				height: 150px;
+				margin: 0 auto 10px auto;
+			}
+		}
+	
+		.textChocolate { background-color: $chocolatte; }
+		.textWine { background-color: $wineColor; }
+		.textGift { background-color: $giftColor; }
+		.textCraft { background-color: $craftColor; }
+	}
+
+	&Gal {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		width: $infinity;
+
+		.box {
+			width: $infinity !important;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+
+			.item {
+				img {
+					display: block;
+					width: $infinity;
+				}
+
+				.textbox {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					background-color: $craftColor;
+					height: $infinity;
+					padding: 20px 50px;
+					color: $white;
+
+					.sep {
+						display: block;
+						background-color: $white;
+						height: 10px;
+						width: 60px;
+						margin: 20px 0 20px;
+					}
+
+					h1 {
+						text-align: left !important;
+					}
+
+					p {
+						font-family: $serifFont !important;
+						font-size: 22px;
+					}
+				}
+			}
+		}
+	}
+}
